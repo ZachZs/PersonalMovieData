@@ -1,1 +1,5 @@
 # PersonalMovieData
+
+<p>Every year, I keep track of the movies I watch, including date, title, release year, and (sometimes) personal score. At the end of the year, I take the list and put it into an excel document of media habits I track, and set up the initial format of the final table.<\p>
+<p>These two R files take the movie list and 1) scrap IMDB for the URL of the movie (if there is one), and 2) scrap the IMDB page for information such as director, IMDB score, etc. It is split into two files for convenience. By only getting the IMDB URLs in the first part, I can easily check for errors and correct the URLs before any significant scraping is done. Once all the URLs are correct, I can then go directly to that URL to get the data that I want.<\p>
+<p>Once all of the data is collected, I can save the final table as a .csv file, and I can copy over the table to the media excel sheet that I have. [Note: there are several steps that could be done for efficiently in this process (such as saving as a .csv and copying over), but the data is usually less than 150 new rows each year, so it doesn't require too much extra work]<\p>
