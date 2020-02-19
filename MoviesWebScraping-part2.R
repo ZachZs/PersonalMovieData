@@ -4,7 +4,7 @@ library(openxlsx)
 library(stringr)
 
 # load in dataset
-# df <- read.xlsx("Media Stats Tracking.xlsx", sheet=3, startRow=1)
+df <- read.xlsx("Media Stats Tracking.xlsx", sheet=3, startRow=1)
 
 # loop through every row in the df
 for(i in 1:nrow(df)) 

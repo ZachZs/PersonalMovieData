@@ -4,7 +4,7 @@ library(openxlsx)
 library(stringr)
 
 # load in dataset
-# df <- read.xlsx("Media Stats Tracking.xlsx", sheet=2, startRow=1)
+df <- read.xlsx("Media Stats Tracking.xlsx", sheet=2, startRow=1)
 
 # Access the FireFox browser, and initialize it
 driver <- rsDriver(browser = c("firefox"))
@@ -15,8 +15,9 @@ ff$open()
 ff$navigate("https://www.imdb.com")
 
 # Loop through every movie
+# MAKE SURE TO CHANGE THE INDEX TO WHERE THE ADDED MOVIES START
 
-for(i in 1:nrow(df)) 
+for(i in 553:nrow(df)) 
 {
   # get the title and year for the row, then paste them together
   movie <- toString(df[i, 4])
